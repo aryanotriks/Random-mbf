@@ -87,45 +87,6 @@ def reg():
         reg()
 
 
-def reg2():
-    os.system('clear')
-    print logo
-    print ''
-    print '\tApproval not detected'
-    print ''
-    print ' \x1b[1;92mCopy and press enter , And Send Me On Facebook'
-    print ''
-    id = uuid.uuid4().hex[:50]
-    print ' Your id: ' + id
-    print ''
-    print ''
-    raw_input(' Press enter to go to Whatsapp ')
-    os.system('xdg-open https://wa.me/+923472860857')
-    sav = open('/sdcard/.hst.txt', 'w')
-    sav.write(id)
-    sav.close()
-    raw_input('\x1b[1;92m Press enter to check Approval ')
-    reg()
-    
-    def reg2():
-    os.system('clear')
-    print logo
-    print ''
-    print '\tApproval not detected'
-    print ''
-    print ' \x1b[1;92mCopy and press enter , And Send Me On Whatsapp'
-    print ''
-    id = uuid.uuid4().hex[:50]
-    print ' Your id: ' + id
-    print ''
-    print ''
-    raw_input(' Press enter to go to Whatsapp ')
-    os.system('xdg-open https://wa.me/+923472860857')
-    sav = open('/sdcard/.hst.txt', 'w')
-    sav.write(id)
-    sav.close()
-    raw_input('\x1b[1;92m Press enter to check Approval ')
-    reg()
 
 
 def ip():
@@ -159,7 +120,6 @@ def ip():
     print ' Loading ...'
     time.sleep(1)
     menu()
-
 
 def menu()
     except requests.exceptions.ConnectionError:
